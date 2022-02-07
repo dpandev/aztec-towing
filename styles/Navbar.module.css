@@ -78,20 +78,27 @@
 }
 
 .displayNone {
-  display: none;
+  /* display: none; */
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
 }
 
 .mobileNavFullscreen {
+  visibility: visible;
   z-index: 1;
   position: fixed;
   height: 100%;
   width: 100%;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.9);
+  transition: all 0.2s ease-in-out;
 }
 
 .mobileNavMenu {
-  padding: 10px;
+  position: fixed;
+  padding: 0 30px;
+  top: 120px;
 }
 
 .mobileNavList {
@@ -108,13 +115,13 @@
   padding-bottom: 25px;
 }
 
-.headerPush { /* not used yet */
-  height: 25vh;
+.headerPush {
+  height: 90px;
 }
 
 .stick {
   position: fixed;
-  top: 0;
+  top: 30px;
   left: 0;
   right: 0;
   z-index: 10;

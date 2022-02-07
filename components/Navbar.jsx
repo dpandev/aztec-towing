@@ -11,10 +11,9 @@ export const Navbar = () => {
     if (openMobileMenu) {
       setopenMobileMenu(false)
       setIsScrolled(false)
-      window.scrollTo({top: 0})
     } else {
       setopenMobileMenu(true)
-      setIsScrolled(false)
+      setIsScrolled(true)
     }
   }
 
@@ -40,7 +39,7 @@ export const Navbar = () => {
 
   return (
     <div className={styles.main}>
-      <header className={`${isScrolled ? styles.stick : ''}`}>
+      <header className={styles.stick}>
         <div className={styles.container}>
           <a className={styles.brandLogo} href="/">Aztec Towing</a>
           <ul className={styles.list}>
@@ -82,7 +81,7 @@ export const Navbar = () => {
         </nav>
       </header>
       <div className={`${styles.mobileNavFullscreen} ${openMobileMenu ? '' : styles.displayNone}`}>
-        {/* <div className={styles.headerPush}></div> */}
+        <div className={styles.headerPush}></div>
         <div className={styles.mobileNavMenu}>
           <div className={styles.mobileNavList}>
             <a className={styles.mobileNavListItem} href='/'>Home</a>

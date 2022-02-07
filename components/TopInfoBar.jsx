@@ -4,7 +4,7 @@ import React from 'react'
 export const TopInfoBar = () => {
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${styles.stick}`}>
       <div className={styles.leftSide}>
         <div className={styles.linksContainer}>
           <a className={styles.link} href='tel:0'>(770) 321 9876</a>
