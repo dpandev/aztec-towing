@@ -62,7 +62,15 @@
     justify-content: space-between;
   }
 
+  .socialsContainer {
+    padding: 0 3vw;
+  }
+
   .linksContainer {
     padding: 0 4vw;
+  }
+
+  #emailContainer {
+    display: none;
   }
 }

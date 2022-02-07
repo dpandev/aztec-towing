@@ -10,9 +10,10 @@
 
 .brandLogo {
   color: #000;
-  font-size: calc(1.5rem + 1vw);
+  font-size: calc(1.4rem + 1vw);
   font-weight: 700;
   font-family: inherit;
+  letter-spacing: 0.2ch;
   display: flex;
 }
 
@@ -37,19 +38,86 @@
 }
 
 .listItem:hover {
-  color: #fff;
-  border: 2px solid #fff;
+  color: #FA9B08;
+  border: 2px solid #000;
   border-radius: 10px;
+  background-color: #000;
 }
 
 .mobileContainer {
   width: 100%;
-  height: 75px;
+  height: 60px;
   background-color: #FA9B08;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 1vw;
+}
+
+.mobileNavLeft {
+  display: flex;
+  align-items: center;
+}
+
+.navHamburger {
+  margin-left: 0.75rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.iconRotate {
+  transform: rotate(90deg)
+}
+
+.mobileBrand {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2ch;
+  color: #000;
+  margin-right: 0.75rem;
+  line-height: 1rem;
+}
+
+.displayNone {
+  display: none;
+}
+
+.mobileNavFullscreen {
+  z-index: 1;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.mobileNavMenu {
+  padding: 10px;
+}
+
+.mobileNavList {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.2ch;
+  padding: 1ch 5vw;
+}
+
+.mobileNavListItem {
+  padding-bottom: 25px;
+}
+
+.headerPush { /* not used yet */
+  height: 25vh;
+}
+
+.stick {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 
 @media screen and (max-width: 767px) {
@@ -61,5 +129,10 @@
 @media screen and (min-width: 768px) {
   .mobileContainer, .mobileContainer > * {
     display: none;
+  }
+
+  .mobileNavFullscreen > * {
+    display: none;
+    /* error - still displays bg color on desktop */
   }
 }
