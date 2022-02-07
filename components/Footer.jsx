@@ -7,7 +7,8 @@ export const Footer = () => {
       <div className={styles.footer}>
         <div className={styles.footerLeft}>
           <div className={styles.text}>
-            <span>Copyright © 2022 Aztec Towing Services, LLC.</span>
+            <span>Copyright © 2022&nbsp;</span>
+            <span>Aztec Towing Services, LLC.</span>
           </div>
           <div className={styles.text}>
             <span>Site built by <a href='/'>Silver Crate Studios</a></span>
