@@ -1,4 +1,5 @@
 .container {
+  z-index: 99;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -6,8 +7,10 @@
   background-color: #000;
   color: #fff;
   justify-content: center;
-  padding: 0.345rem;
+  padding: 0.345rem 2rem;
   height: 30px;
+  overflow: hidden;
+  justify-content: space-between;
 }
 
 .stick {
@@ -21,13 +24,13 @@
 .leftSide {
   display: flex;
   flex-direction: row;
-  padding: 0 10vw 0 0;
+  padding: 0 5vw 0 0;
 }
 
 .rightSide {
   display: flex;
   flex-direction: row;
-  padding: 0 0 0 10vw;
+  padding: 0 0 0 5vw;
 }
 
 .linksContainer {
@@ -35,7 +38,7 @@
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.3ch;
-  padding: 0 4.5vh 0 0;
+  padding: 0 5vw 0 0;
   transition: color 0.2s ease-in-out;
 }
 
@@ -45,7 +48,7 @@
 }
 
 .socialsContainer {
-  padding: 0 1vw;
+  padding: 0 1rem;
 }
 
 .social svg:hover {
@@ -64,6 +67,7 @@
 @media screen and (max-width: 767px) {
   .container {
     justify-content: space-between;
+    padding: 0.345rem 0;
   }
 
   .leftSide, .rightSide {
