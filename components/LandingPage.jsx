@@ -36,7 +36,7 @@ export const LandingPage = () => {
           <span>Maecenas posuere accumsan laoreet. Donec id sem quam. Mauris pulvinar magna nec odio iaculis tristique. Morbi ex mi, auctor vestibulum ultricies ac, facilisis ac ipsum. Nullam commodo consequat augue, id cursus nisl. Duis lobortis sodales velit, quis maximus urna commodo ultricies. Nam hendrerit dui erat. Donec eu consequat augue. Mauris quis elit dignissim, lacinia odio lacinia, eleifend lorem. Pellentesque ut condimentum augue, et molestie turpis. Morbi porttitor sollicitudin egestas.</span>
         </div>
         <div className={styles.button}>
-          <a>Know More</a>
+          <a>Contact Us</a>
         </div>
       </div>
       <div className={styles.section} id={styles.section4}>
@@ -98,6 +98,46 @@ export const LandingPage = () => {
               <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
             </div>
           </div>
+        </div>
+      </div>
+      <div className={styles.section} id={styles.section7}>
+        <div className={styles.heading}>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div className={styles.textDivider}>
+          <hr></hr>
+        </div>
+        <div className={styles.faq}>
+        <input id='faq-a' type='checkbox' />
+          <label htmlFor='faq-a'>
+            <p className={styles.faqHeading}>Question 1</p>
+            <div className={styles.faqArrow}></div>
+            <p className={styles.faqText}>Here is the answer!</p>
+          </label>
+          <input id='faq-b' type='checkbox' />
+          <label htmlFor='faq-b'>
+            <p className={styles.faqHeading}>Question 2</p>
+            <div className={styles.faqArrow}></div>
+            <p className={styles.faqText}>Here is the answer!</p>
+          </label>
+          <input id='faq-c' type='checkbox' />
+          <label htmlFor='faq-c'>
+            <p className={styles.faqHeading}>Question 3</p>
+            <div className={styles.faqArrow}></div>
+            <p className={styles.faqText}>Here is the answer!</p>
+          </label>
+          <input id='faq-d' type='checkbox' />
+          <label htmlFor='faq-d'>
+            <p className={styles.faqHeading}>Question 4</p>
+            <div className={styles.faqArrow}></div>
+            <p className={styles.faqText}>Here is the answer!</p>
+          </label>
+          <input id='faq-e' type='checkbox' />
+          <label htmlFor='faq-e'>
+            <p className={styles.faqHeading}>Question 5</p>
+            <div className={styles.faqArrow}></div>
+            <p className={styles.faqText}>Here is the answer!</p>
+          </label>
         </div>
       </div>
       <div className={styles.section} id={styles.section5}>

@@ -21,10 +21,12 @@
   display: flex;
   justify-content: space-between;
   transition: all 0.2s ease-in-out;
+  padding-bottom: 5px;
+  border: 5px solid #FA9B08;
 }
 
 .brandLogo:hover {
-  transform: scale(1.1);
+  border-bottom: 5px solid #000;;
 }
 
 .list {
@@ -37,21 +39,20 @@
 .listItem {
   display: flex;
   margin: 0 0.2vw;
-  padding: 0.6vw 1vw;
+  padding: 0.3vw 1vw;
   font-size: 1rem;
   font-weight: 700;
   color: #000;
   cursor: pointer;
   transition: all .2s ease-in-out;
-  border-radius: 10px;
-  border: 2px solid #FA9B08;
+  border: 5px solid #FA9B08;
 }
 
 .listItem:hover {
-  color: #FA9B08;
-  border: 2px solid #000;
-  border-radius: 10px;
-  background-color: #000;
+  /* color: #FA9B08; */
+  border-bottom: 5px solid #000;
+  /* border-radius: 10px; */
+  /* background-color: #000; */
 }
 
 .mobileContainer {
@@ -89,11 +90,11 @@
   line-height: 1rem;
 }
 
+/* nav fullscreen animation fade needs to use visible to animate */
 .displayNone {
-  /* display: none; */
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
+  transition: display 0s, opacity 0.5s linear;
 }
 
 .mobileNavFullscreen {
@@ -103,7 +104,7 @@
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.95);
   transition: all 0.2s ease-in-out;
 }
 

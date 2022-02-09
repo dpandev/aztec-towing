@@ -3,7 +3,8 @@
   flex-direction: row;
   background-color: #000;
   width: 100%;
-  height: 45px;
+  max-height: 75px;
+  padding: 5px 0;
 }
 
 .footer {
@@ -23,7 +24,12 @@
   display: flex;
   color: #fff;
   font-size: 0.75rem;
+  letter-spacing: 0.2ch;
   padding: 0.1rem 0;
+}
+
+.text p {
+  margin: 0;
 }
 
 .footerRight {
@@ -34,6 +40,18 @@
 .contactInfo {
   display: flex;
   color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.2ch;
+  transition: all 0.2s ease-in-out;
+}
+
+.contactInfo:hover {
+  color: #FA9B08;
+}
+
+#second a:hover {
+  transition: all 0.2s ease-in-out;
+  color: #FA9B08;
 }
 
 @media screen and (max-width: 767px) {
