@@ -1,65 +1,43 @@
 import styles from '../styles/Navbar.module.css'
 import Link from 'next/link'
-import { React, useState, useEffect } from 'react'
+import { React, useState } from 'react'
 
 export const Navbar = () => {
 
   const [openMobileMenu, setopenMobileMenu] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
 
   const toggleMobileMenu = () => {
     if (openMobileMenu) {
       setopenMobileMenu(false)
-      setIsScrolled(false)
     } else {
       setopenMobileMenu(true)
-      setIsScrolled(true)
     }
   }
-
-  const handleScroll = () => {
-    if (openMobileMenu) {
-      setIsScrolled(true)
-    } else if (window.pageYOffset > 30) {
-      setIsScrolled(true)
-    } else {
-      setIsScrolled(false)
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll, true)
-  }, [])
-
-  useEffect(() => {
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [openMobileMenu])
 
   return (
     <div className={styles.main}>
       <header className={styles.stick}>
         <div className={styles.container}>
-          <a className={styles.brandLogo} href="/">Aztec Towing</a>
+          <img className={styles.logoImg} src='./assets/images/tow-truck.png' width={80} height={80} />
+          <Link href='/'><a className={styles.brandLogo}>Aztec Towing</a></Link>
           <ul className={styles.list}>
             <li className={styles.listItem}>
               <Link href='/'>Home</Link>
             </li>
             <li className={styles.listItem}>
-              <Link href='/about'>About Us</Link>
+              <Link href='/#about'>About Us</Link>
             </li>
             <li className={styles.listItem}>
-              <Link href='/services'>Services</Link>
+              <Link href='/#services'>Services</Link>
             </li>
             <li className={styles.listItem}>
-              <Link href='/testimonials'>Testimonials</Link>
+              <Link href='/#faq'>FAQ</Link>
             </li>
             <li className={styles.listItem}>
-              <Link href='/faq'>FAQ</Link>
+              <Link href='/#testimonials'>Testimonials</Link>
             </li>
             <li className={styles.listItem}>
-              <Link className={styles.link} href='/contact'>Contact Us</Link>
+              <Link href='/#contact'>Contact Us</Link>
             </li>
           </ul>
         </div>
@@ -76,24 +54,25 @@ export const Navbar = () => {
             </div>
           </div>
           <div className={styles.mobileNavRight}>
-            <a className={styles.mobileBrand} href='/'>Aztec Towing</a>
+            <img src='./assets/images/tow-truck.png' className={styles.logoImg} width={60} height={60} />
+            <Link href='/'><a className={styles.mobileBrand} onClick={openMobileMenu ? toggleMobileMenu : ''}>Aztec Towing</a></Link>
           </div>
         </nav>
       </header>
-      <div className={`${styles.mobileNavFullscreen} ${openMobileMenu ? '' : styles.displayNone}`}>
+      <div className={`${styles.mobileNavFullscreen} ${openMobileMenu ? '' : styles.displayNone} ${openMobileMenu ? styles.aboveThemAll : styles.belowThemAll}`}>
         <div className={styles.headerPush}></div>
         <div className={styles.mobileNavMenu}>
           <div className={styles.mobileNavList}>
-            <a className={styles.mobileNavListItem} href='/'>Home</a>
-            <a className={styles.mobileNavListItem} href='/'>About Us</a>
-            <a className={styles.mobileNavListItem} href='/'>Services</a>
-            <a className={styles.mobileNavListItem} href='/'>Testimonials</a>
-            <a className={styles.mobileNavListItem} href='/'>FAQ</a>
-            <a className={styles.mobileNavListItem} href='/'>Contact Us</a>
+            <Link href='/'><a onClick={toggleMobileMenu}>Home</a></Link>
+            <Link href='/#about'><a onClick={toggleMobileMenu}>About Us</a></Link>
+            <Link href='/#services'><a onClick={toggleMobileMenu}>Services</a></Link>
+            <Link href='/#faq'><a onClick={toggleMobileMenu}>FAQ</a></Link>
+            <Link href='/#testimonials'><a onClick={toggleMobileMenu}>Testimonials</a></Link>
+            <Link href='/#contact'><a onClick={toggleMobileMenu}>Contact Us</a></Link>
           </div>
         </div>
       </div>
-      <div className={`${styles.headerPush} ${isScrolled ? '' : styles.displayNone}`}></div>
+      <div className={`${styles.headerPush}`}></div>
     </div>
   )
 }

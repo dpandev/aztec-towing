@@ -4,11 +4,12 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
+import Image from 'next/image';
 
 export const LandingPage = () => {
   return (
     <div className={styles.container}>
-      <div className={`${styles.section} ${styles.section1}`} id={styles.section1}>
+      <div className={`${styles.section} ${styles.section1}`} id='home'>
         <div className={styles.subheading}>
           <h4>Roadside Assistance when you need it the most</h4>
         </div>
@@ -16,13 +17,13 @@ export const LandingPage = () => {
           <h2>The highest quality towing services</h2>
         </div>
       </div>
-      <div className={styles.section} id={styles.section2}>
+      <div className={`${styles.section} ${styles.section2}`} id='contact'>
         <div className={styles.featureBox}>
           <h3>24/7 Emergency Towing</h3>
-          <h5><a href='tel:0'>(719) 123-1234</a></h5>
+          <h5><a href='tel:0'>(800) 555-1234</a></h5>
         </div>
       </div>
-      <div className={styles.section} id={styles.section3}>
+      <div className={`${styles.section} ${styles.section3}`} id='about'>
         <div className={styles.heading}>
           <h2>About</h2>
         </div>
@@ -36,10 +37,10 @@ export const LandingPage = () => {
           <span>Maecenas posuere accumsan laoreet. Donec id sem quam. Mauris pulvinar magna nec odio iaculis tristique. Morbi ex mi, auctor vestibulum ultricies ac, facilisis ac ipsum. Nullam commodo consequat augue, id cursus nisl. Duis lobortis sodales velit, quis maximus urna commodo ultricies. Nam hendrerit dui erat. Donec eu consequat augue. Mauris quis elit dignissim, lacinia odio lacinia, eleifend lorem. Pellentesque ut condimentum augue, et molestie turpis. Morbi porttitor sollicitudin egestas.</span>
         </div>
         <div className={styles.button}>
-          <a>Contact Us</a>
+          <a href='tel:0'>Contact Us</a>
         </div>
       </div>
-      <div className={styles.section} id={styles.section4}>
+      <div className={`${styles.section} ${styles.section4}`} id='services'>
         <div className={styles.featureImageRow} id={styles.row1}>
           <div className={styles.featureImageLarge}>
             <div className={styles.featureImageHeading}>
@@ -100,7 +101,7 @@ export const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div className={styles.section} id={styles.section7}>
+      <div className={`${styles.section} ${styles.section7}`} id='faq'>
         <div className={styles.heading}>
           <h2>Frequently Asked Questions</h2>
         </div>
@@ -110,37 +111,37 @@ export const LandingPage = () => {
         <div className={styles.faq}>
         <input id='faq-a' type='checkbox' />
           <label htmlFor='faq-a'>
-            <p className={styles.faqHeading}>Question 1</p>
+            <p className={styles.faqHeading}>What areas does Local Tow operate in?</p>
             <div className={styles.faqArrow}></div>
-            <p className={styles.faqText}>Here is the answer!</p>
+            <p className={styles.faqText}>In facilisis, nisl quis convallis mollis, risus mi sollicitudin tortor, sit amet elementum est nulla ut sapien. Nunc orci nulla, mollis et sodales sit amet, condimentum vitae elit.</p>
           </label>
           <input id='faq-b' type='checkbox' />
           <label htmlFor='faq-b'>
-            <p className={styles.faqHeading}>Question 2</p>
+            <p className={styles.faqHeading}>How much does a tow cost?</p>
             <div className={styles.faqArrow}></div>
-            <p className={styles.faqText}>Here is the answer!</p>
+            <p className={styles.faqText}>In facilisis, nisl quis convallis mollis, risus mi sollicitudin tortor, sit amet elementum est nulla ut sapien. Nunc orci nulla, mollis et sodales sit amet, condimentum vitae elit.</p>
           </label>
           <input id='faq-c' type='checkbox' />
           <label htmlFor='faq-c'>
-            <p className={styles.faqHeading}>Question 3</p>
+            <p className={styles.faqHeading}>How much does it cost to tow an RV?</p>
             <div className={styles.faqArrow}></div>
-            <p className={styles.faqText}>Here is the answer!</p>
+            <p className={styles.faqText}>In facilisis, nisl quis convallis mollis, risus mi sollicitudin tortor, sit amet elementum est nulla ut sapien. Nunc orci nulla, mollis et sodales sit amet, condimentum vitae elit.</p>
           </label>
           <input id='faq-d' type='checkbox' />
           <label htmlFor='faq-d'>
-            <p className={styles.faqHeading}>Question 4</p>
+            <p className={styles.faqHeading}>Will towing ruin my vehicle transmission?</p>
             <div className={styles.faqArrow}></div>
-            <p className={styles.faqText}>Here is the answer!</p>
+            <p className={styles.faqText}>In facilisis, nisl quis convallis mollis, risus mi sollicitudin tortor, sit amet elementum est nulla ut sapien. Nunc orci nulla, mollis et sodales sit amet, condimentum vitae elit.</p>
           </label>
           <input id='faq-e' type='checkbox' />
           <label htmlFor='faq-e'>
-            <p className={styles.faqHeading}>Question 5</p>
+            <p className={styles.faqHeading}>Does my car insurance cover towing?</p>
             <div className={styles.faqArrow}></div>
-            <p className={styles.faqText}>Here is the answer!</p>
+            <p className={styles.faqText}>In facilisis, nisl quis convallis mollis, risus mi sollicitudin tortor, sit amet elementum est nulla ut sapien. Nunc orci nulla, mollis et sodales sit amet, condimentum vitae elit.</p>
           </label>
         </div>
       </div>
-      <div className={styles.section} id={styles.section5}>
+      <div className={`${styles.section} ${styles.section5}`} id='testimonials'>
         <div className={styles.heading}>
           <h2>Testimonials</h2>
         </div>
@@ -193,35 +194,6 @@ export const LandingPage = () => {
           </div>
         </div>
       </div>
-      {/* <div className={styles.section} id={styles.section6}>
-        <div className={styles.leftSide}>
-          <div className={styles.heading}>
-            <h2>Contact Us</h2>
-          </div>
-          <div className={styles.textDivider}>
-            <hr></hr>
-          </div>
-          <div className={styles.contactInfo}>
-            <div className={styles.contactItem}>
-              <i></i>
-              <span></span>
-            </div>
-            <div className={styles.contactItem}>
-              <i></i>
-              <span></span>
-            </div>
-            <div className={styles.contactItem}>
-              <i></i>
-              <span></span>
-            </div>
-          </div>
-        </div>
-        <div className={styles.rightSide}>
-          <div className={styles.button}>
-            <a>See FAQs</a>
-          </div>
-        </div>
-      </div> */}
     </div>
   )
 }
