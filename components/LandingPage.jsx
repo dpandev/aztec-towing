@@ -111,33 +111,33 @@ export const LandingPage = () => {
         <div className={styles.faq}>
         <input id='faq-a' type='checkbox' />
           <label htmlFor='faq-a'>
-            <p className={styles.faqHeading}>What areas does Local Tow operate in?</p>
+            <p className={styles.faqHeading}>What areas does Aztec Towing operate in?</p>
             <div className={styles.faqArrow}></div>
-            <p className={styles.faqText}>In facilisis, nisl quis convallis mollis, risus mi sollicitudin tortor, sit amet elementum est nulla ut sapien. Nunc orci nulla, mollis et sodales sit amet, condimentum vitae elit.</p>
+            <p className={styles.faqText}>We operate in the greater Colorado Springs area.</p>
           </label>
           <input id='faq-b' type='checkbox' />
           <label htmlFor='faq-b'>
-            <p className={styles.faqHeading}>How much does a tow cost?</p>
+            <p className={styles.faqHeading}>How much does a standard tow cost?</p>
             <div className={styles.faqArrow}></div>
-            <p className={styles.faqText}>In facilisis, nisl quis convallis mollis, risus mi sollicitudin tortor, sit amet elementum est nulla ut sapien. Nunc orci nulla, mollis et sodales sit amet, condimentum vitae elit.</p>
+            <p className={styles.faqText}>The cost can vary depending various factors like tow distance and type of vehicle. Contact us to see what we can do for you!</p>
           </label>
           <input id='faq-c' type='checkbox' />
           <label htmlFor='faq-c'>
             <p className={styles.faqHeading}>How much does it cost to tow an RV?</p>
             <div className={styles.faqArrow}></div>
-            <p className={styles.faqText}>In facilisis, nisl quis convallis mollis, risus mi sollicitudin tortor, sit amet elementum est nulla ut sapien. Nunc orci nulla, mollis et sodales sit amet, condimentum vitae elit.</p>
+            <p className={styles.faqText}>There are multiple variables factored into the cost, such as towing distance and size/weight of the vehicle.</p>
           </label>
           <input id='faq-d' type='checkbox' />
           <label htmlFor='faq-d'>
             <p className={styles.faqHeading}>Will towing ruin my vehicle transmission?</p>
             <div className={styles.faqArrow}></div>
-            <p className={styles.faqText}>In facilisis, nisl quis convallis mollis, risus mi sollicitudin tortor, sit amet elementum est nulla ut sapien. Nunc orci nulla, mollis et sodales sit amet, condimentum vitae elit.</p>
+            <p className={styles.faqText}>Our drivers are professionally trained to tow vehicles without occurring any damage whatsoever to your vehicle.</p>
           </label>
           <input id='faq-e' type='checkbox' />
           <label htmlFor='faq-e'>
             <p className={styles.faqHeading}>Does my car insurance cover towing?</p>
             <div className={styles.faqArrow}></div>
-            <p className={styles.faqText}>In facilisis, nisl quis convallis mollis, risus mi sollicitudin tortor, sit amet elementum est nulla ut sapien. Nunc orci nulla, mollis et sodales sit amet, condimentum vitae elit.</p>
+            <p className={styles.faqText}>Check with your auto insurance provider for details on what your policy covers.</p>
           </label>
         </div>
       </div>

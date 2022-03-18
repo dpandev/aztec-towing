@@ -18,7 +18,7 @@ export const Navbar = () => {
     <div className={styles.main}>
       <header className={styles.stick}>
         <div className={styles.container}>
-          <img className={styles.logoImg} src='./assets/images/tow-truck.png' width={80} height={80} />
+          <img className={styles.logoImg} src='./assets/images/skullIcon.png' width={45} height={60} />
           <Link href='/'><a className={styles.brandLogo}>Aztec Towing</a></Link>
           <ul className={styles.list}>
             <li className={styles.listItem}>
@@ -54,8 +54,8 @@ export const Navbar = () => {
             </div>
           </div>
           <div className={styles.mobileNavRight}>
-            <img src='./assets/images/tow-truck.png' className={styles.logoImg} width={60} height={60} />
             <Link href='/'><a className={styles.mobileBrand} onClick={openMobileMenu ? toggleMobileMenu : ''}>Aztec Towing</a></Link>
+            <img src='./assets/images/skullIcon.png' className={styles.logoImg} width={45} height={55} />
           </div>
         </nav>
       </header>

@@ -1,3 +1,16 @@
+:root {
+  --primary-site-color: #FA9B08;
+  --secondary-site-color: #000;
+
+  --primary-font-color: #fff;
+  --secondary-font-color: #000;
+}
+
+@font-face {
+  font-family: righteous;
+  src: url('/assets/fonts/Righteous-Regular.ttf');
+}
+
 html,
 body {
   -ms-overflow-style: none;  /* IE and Edge */

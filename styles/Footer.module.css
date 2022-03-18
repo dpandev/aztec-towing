@@ -1,7 +1,7 @@
 .container {
   display: flex;
   flex-direction: row;
-  background-color: #000;
+  background-color: var(--secondary-site-color);
   width: 100%;
   max-height: 75px;
   padding: 5px 0;
@@ -22,7 +22,7 @@
 
 .text {
   display: flex;
-  color: #fff;
+  color: var(--primary-font-color);
   font-size: 0.75rem;
   letter-spacing: 0.2ch;
   padding: 0.1rem 0;
@@ -39,19 +39,19 @@
 
 .contactInfo {
   display: flex;
-  color: #fff;
+  color: var(--primary-font-color);
   font-weight: 600;
   letter-spacing: 0.2ch;
   transition: all 0.2s ease-in-out;
 }
 
 .contactInfo:hover {
-  color: #FA9B08;
+  color: var(--primary-site-color);
 }
 
 #second a:hover {
   transition: all 0.2s ease-in-out;
-  color: #FA9B08;
+  color: var(--primary-site-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -73,5 +73,9 @@
     flex-direction: column;
     max-width: 50vw;
     align-self: center;
+  }
+
+  .link {
+    text-align: right !important;
   }
 }
