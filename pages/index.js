@@ -1,14 +1,15 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import { LandingPage } from '../components/LandingPage'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Aztec Towing</title>
-        <meta name="description" content="A Parter for the Mayonnaise Farmer" />
+        <title>Aztec Towing, LLC.</title>
+        <meta name="description" content="#1 Towing Services Provider in the Colorado Springs area" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <LandingPage />
     </div>
   )
 }
