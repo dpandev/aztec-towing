@@ -34,9 +34,6 @@ export const Navbar = () => {
               <Link href='/#faq'>FAQ</Link>
             </li>
             <li className={styles.listItem}>
-              <Link href='/#testimonials'>Testimonials</Link>
-            </li>
-            <li className={styles.listItem}>
               <Link href='/#contact'>Contact Us</Link>
             </li>
           </ul>
@@ -67,7 +64,6 @@ export const Navbar = () => {
             <Link href='/#about'><a onClick={toggleMobileMenu}>About Us</a></Link>
             <Link href='/#services'><a onClick={toggleMobileMenu}>Services</a></Link>
             <Link href='/#faq'><a onClick={toggleMobileMenu}>FAQ</a></Link>
-            <Link href='/#testimonials'><a onClick={toggleMobileMenu}>Testimonials</a></Link>
             <Link href='/#contact'><a onClick={toggleMobileMenu}>Contact Us</a></Link>
           </div>
         </div>

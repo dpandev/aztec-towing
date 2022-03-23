@@ -1,20 +1,18 @@
 import React from 'react'
 import styles from '../styles/LandingPage.module.css'
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
-import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
-import Image from 'next/image';
+import AccessTimeIcon from '@mui/icons-material/AccessTime'
+import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk'
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney'
 
 export const LandingPage = () => {
   return (
     <div className={styles.container}>
       <div className={`${styles.section} ${styles.section1}`} id='home'>
         <div className={styles.subheading}>
-          <h4>Roadside Assistance when you need it the most</h4>
+          <h4>The best towing services in Colorado</h4>
         </div>
         <div className={styles.heading}>
-          <h2>The highest quality towing services</h2>
+          <h2>Roadside Assistance when you need it the most</h2>
         </div>
       </div>
       <div className={`${styles.section} ${styles.section2}`} id='contact'>
@@ -34,7 +32,7 @@ export const LandingPage = () => {
           <h4>Fast and Inexpensive Towing Services</h4>
         </div>
         <div className={styles.featureText}>
-          <span>Maecenas posuere accumsan laoreet. Donec id sem quam. Mauris pulvinar magna nec odio iaculis tristique. Morbi ex mi, auctor vestibulum ultricies ac, facilisis ac ipsum. Nullam commodo consequat augue, id cursus nisl. Duis lobortis sodales velit, quis maximus urna commodo ultricies. Nam hendrerit dui erat. Donec eu consequat augue. Mauris quis elit dignissim, lacinia odio lacinia, eleifend lorem. Pellentesque ut condimentum augue, et molestie turpis. Morbi porttitor sollicitudin egestas.</span>
+          <span>We've been serving the Colorado Springs community and surrounding areas for over 2 years. Our mission is to provide the best towing services at an affordable cost. Our expert drivers are trained to handle a variety of situations and we offer a handful of towing services to suit your needs. You can count on us at Aztec Towing, LLC. to be there for you when you need it most!</span>
         </div>
         <div className={styles.button}>
           <a href='tel:0'>Contact Us</a>
@@ -61,7 +59,7 @@ export const LandingPage = () => {
           </div>
           <div className={styles.featureImageLarge}>
             <div className={styles.featureImageHeading}>
-              <h3>On-site Repair</h3>
+              <h3>On-site Diagnostics</h3>
             </div>
           </div>
         </div>
@@ -71,10 +69,10 @@ export const LandingPage = () => {
               <AccessTimeIcon style={{ 'color': '#fff' }} className={styles.featureIcon} />
             </div>
             <div className={styles.featureImageHeading}>
-              <h3>LESS THAN 30 MIN ARRIVAL</h3>
+              <h3>LESS THAN 1 HOUR ARRIVAL</h3>
             </div>
             <div className={styles.featureText}>
-              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+              <span>Don't wait hours for a tow. We strive to get you the fastest service available in the area.</span>
             </div>
           </div>
           <div className={styles.featureImageSquare} id={styles.square2}>
@@ -85,7 +83,7 @@ export const LandingPage = () => {
               <h3 id={styles.headingTop}>24/7 SERVICE CALL</h3><h3 id={styles.headingBottom}>(719) 123-1234</h3>
             </div>
             <div className={styles.featureText}>
-              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+              <span>Call us and we'll get you the assistance you need when you need it. We're available to take your call anytime.</span>
             </div>
           </div>
           <div className={styles.featureImageSquare} id={styles.square3}>
@@ -96,7 +94,7 @@ export const LandingPage = () => {
               <h3>AFFORDABLE PRICES ALWAYS</h3>
             </div>
             <div className={styles.featureText}>
-              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+              <span>We provide the reliable and quick towing services at reasonable and affordable costs.</span>
             </div>
           </div>
         </div>
@@ -113,7 +111,7 @@ export const LandingPage = () => {
           <label htmlFor='faq-a'>
             <p className={styles.faqHeading}>What areas does Aztec Towing operate in?</p>
             <div className={styles.faqArrow}></div>
-            <p className={styles.faqText}>We operate in the greater Colorado Springs area.</p>
+            <p className={styles.faqText}>We operate in Colorado Springs and the surrounding areas.</p>
           </label>
           <input id='faq-b' type='checkbox' />
           <label htmlFor='faq-b'>
@@ -131,67 +129,14 @@ export const LandingPage = () => {
           <label htmlFor='faq-d'>
             <p className={styles.faqHeading}>Will towing ruin my vehicle transmission?</p>
             <div className={styles.faqArrow}></div>
-            <p className={styles.faqText}>Our drivers are professionally trained to tow vehicles without occurring any damage whatsoever to your vehicle.</p>
+            <p className={styles.faqText}>Our drivers are professionally trained to tow vehicles without inccurring any damage to your vehicle whatsoever. Your vehicle is safe in our hands guarenteed!</p>
           </label>
           <input id='faq-e' type='checkbox' />
           <label htmlFor='faq-e'>
             <p className={styles.faqHeading}>Does my car insurance cover towing?</p>
             <div className={styles.faqArrow}></div>
-            <p className={styles.faqText}>Check with your auto insurance provider for details on what your policy covers.</p>
+            <p className={styles.faqText}>Please check with your auto insurance provider for details on what your policy covers.</p>
           </label>
-        </div>
-      </div>
-      <div className={`${styles.section} ${styles.section5}`} id='testimonials'>
-        <div className={styles.heading}>
-          <h2>Testimonials</h2>
-        </div>
-        <div className={styles.textDivider}>
-          <hr></hr>
-        </div>
-        <div className={styles.testimonialBox}>
-          <div className={styles.profileBox}>
-            <img className={styles.profileImg} src='/assets/images/reviewProfileImg1.jpg' />
-            <h3>Carmen Reeds</h3>
-          </div>
-          <div className={styles.reviewTextbox}>
-            <div className={styles.topIcon}>
-              <FormatQuoteIcon style={{ 'color': '#fff' }} className={styles.featureIcon} />
-            </div>
-            <p className={styles.reviewMessage}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere accumsan laoreet. Donec id sem quam. Mauris pulvinar magna nec odio iaculis tristique.</p>
-            <div className={styles.bottomIcon}>
-              <FormatQuoteIcon style={{ 'color': '#fff' }} className={styles.featureIcon} />
-            </div>
-          </div>
-        </div>
-        <div className={styles.testimonialBox}>
-          <div className={styles.profileBox}>
-            <img className={styles.profileImg} src='/assets/images/reviewProfileImg2.jpg' />
-            <h3>James DeBeau</h3>
-          </div>
-          <div className={styles.reviewTextbox}>
-            <div className={styles.topIcon}>
-              <FormatQuoteIcon style={{ 'color': '#fff' }} className={styles.featureIcon} />
-            </div>
-            <p className={styles.reviewMessage}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere accumsan laoreet. Donec id sem quam. Mauris pulvinar magna nec odio iaculis tristique.</p>
-            <div className={styles.bottomIcon}>
-              <FormatQuoteIcon style={{ 'color': '#fff' }} className={styles.featureIcon} />
-            </div>
-          </div>
-        </div>
-        <div className={styles.testimonialBox}>
-          <div className={styles.profileBox}>
-            <img className={styles.profileImg} src='/assets/images/reviewProfileImg3.jpg' />
-            <h3>Kathrine Miller</h3>
-          </div>
-          <div className={styles.reviewTextbox}>
-            <div className={styles.topIcon}>
-              <FormatQuoteIcon style={{ 'color': '#fff' }} className={styles.featureIcon} />
-            </div>
-            <p className={styles.reviewMessage}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere accumsan laoreet. Donec id sem quam. Mauris pulvinar magna nec odio iaculis tristique.</p>
-            <div className={styles.bottomIcon}>
-              <FormatQuoteIcon style={{ 'color': '#fff' }} className={styles.featureIcon} />
-            </div>
-          </div>
         </div>
       </div>
     </div>

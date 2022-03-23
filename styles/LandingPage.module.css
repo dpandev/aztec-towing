@@ -164,6 +164,7 @@
 .button a {
   border: 5px solid var(--primary-site-color);
   padding-bottom: 4px;
+  transition: all 0.2s ease-in-out;
 }
 
 .button a:hover {
@@ -252,7 +253,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(248, 155, 8, 0.6);
+  background-color: var(--primary-site-shaded-darker);
 }
 
 #row2 .featureImageLarge {
@@ -322,15 +323,15 @@
 }
 
 #square1.featureImageSquare::before {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--secondary-site-shaded-lighter);
 }
 
 #square2.featureImageSquare::before {
-  background-color: rgba(248, 155, 8, 0.9);
+  background-color: var(--primary-site-shaded-lighter);
 }
 
 #square3.featureImageSquare::before {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--secondary-site-shaded-lighter);
 }
 
 .featureImageSquare .featureImageIcon {
@@ -459,7 +460,7 @@
   color: var(--primary-site-color);
   width: 95%;
   padding-left: 20px;
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .faq {
@@ -517,7 +518,7 @@
   display: block;
   background: #1A1A1A !important;
   color: var(--primary-site-color);
-  height: 175px;
+  height: 185px;
   transition: height 0.8s;
   -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -525,7 +526,7 @@
  .faq input[type='checkbox']:not(:checked) + label {
   display: block;
   transition: height 0.8s;
-  height: 60px;
+  height: 75px;
   -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 

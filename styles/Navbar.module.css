@@ -26,9 +26,9 @@
   margin-right: 1.5vw;
 }
 
-.brandLogo:hover {
+/* .brandLogo:hover {
   border-bottom: 5px solid var(--secondary-font-color);
-}
+} */
 
 .list {
   display: flex;
