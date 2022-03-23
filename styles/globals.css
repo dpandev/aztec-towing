@@ -1,6 +1,16 @@
 :root {
-  --primary-site-color: #FA9B08;
-  --secondary-site-color: #000;
+  /* rbga(250, 155, 8, 1) */
+  --primary-color: 250, 155, 8;
+  --secondary-color: 0, 0, 0;
+
+  --primary-site-color: rgba(var(--primary-color), 1);
+  --secondary-site-color: rgba(var(--secondary-color), 1);
+
+  --primary-site-shaded-darker: rgba(var(--primary-color), 0.6);
+  --primary-site-shaded-lighter: rgba(var(--primary-color), 0.9);
+
+  --secondary-site-shaded-darker: rgba(var(--secondary-color), 0.6);
+  --secondary-site-shaded-lighter: rgba(var(--secondary-color), 0.9);
 
   --primary-font-color: #fff;
   --secondary-font-color: #000;
