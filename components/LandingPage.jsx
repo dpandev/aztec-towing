@@ -32,7 +32,7 @@ export const LandingPage = () => {
           <h4>Fast and Inexpensive Towing Services</h4>
         </div>
         <div className={styles.featureText}>
-          <span>We've been serving the Colorado Springs community and surrounding areas for over 2 years. Our mission is to provide the best towing services at an affordable cost. Our expert drivers are trained to handle a variety of situations and we offer a handful of towing services to suit your needs. You can count on us at Aztec Towing, LLC. to be there for you when you need it most!</span>
+          <span>{"We've been serving the Colorado Springs community and surrounding areas for over 2 years. Our mission is to provide the best towing services at an affordable cost. Our expert drivers are trained to handle a variety of situations and we offer a handful of towing services to suit your needs. You can count on us at Aztec Towing, LLC. to be there for you when you need it most!"}</span>
         </div>
         <div className={styles.button}>
           <a href='tel:0'>Contact Us</a>
@@ -59,7 +59,7 @@ export const LandingPage = () => {
           </div>
           <div className={styles.featureImageLarge}>
             <div className={styles.featureImageHeading}>
-              <h3>On-site Diagnostics</h3>
+              <h3>Junk Car Removal</h3>
             </div>
           </div>
         </div>
