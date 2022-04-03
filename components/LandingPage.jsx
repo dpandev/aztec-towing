@@ -18,7 +18,7 @@ export const LandingPage = () => {
       <div className={`${styles.section} ${styles.section2}`} id='contact'>
         <div className={styles.featureBox}>
           <h3>24/7 Emergency Towing</h3>
-          <h5><a href='tel:0'>(800) 555-1234</a></h5>
+          <h5><a href='tel:7193931692'>(719) 393-1692</a></h5>
         </div>
       </div>
       <div className={`${styles.section} ${styles.section3}`} id='about'>
@@ -35,7 +35,7 @@ export const LandingPage = () => {
           <span>{"We've been serving the Colorado Springs community and surrounding areas for over 2 years. Our mission is to provide the best towing services at an affordable cost. Our expert drivers are trained to handle a variety of situations and we offer a handful of towing services to suit your needs. You can count on us at Aztec Towing, LLC. to be there for you when you need it most!"}</span>
         </div>
         <div className={styles.button}>
-          <a href='tel:0'>Contact Us</a>
+          <a href='tel:7193931692'>Contact Us</a>
         </div>
       </div>
       <div className={`${styles.section} ${styles.section4}`} id='services'>
@@ -80,7 +80,7 @@ export const LandingPage = () => {
               <PhoneInTalkIcon style={{ 'color': '#fff' }} className={styles.featureIcon} />
             </div>
             <div className={styles.featureImageHeading}>
-              <h3 id={styles.headingTop}>24/7 SERVICE CALL</h3><h3 id={styles.headingBottom}>(719) 123-1234</h3>
+              <h3 id={styles.headingTop}>24/7 SERVICE CALL</h3><h3 id={styles.headingBottom}>(719) 393-1692</h3>
             </div>
             <div className={styles.featureText}>
               <span>{"Call us and we'll get you the assistance you need when you need it. We're available to take your call anytime."}</span>

@@ -18,7 +18,7 @@ export const Footer = () => {
         </div>
         <div className={styles.footerRight}>
           <div className={styles.contactInfo}>
-            <a href='test@example.com'>help@aztec-towing.com</a>
+            <a href='mailto:dogsdrift@gmail.com'>dogsdrift@gmail.com</a>
           </div>
         </div>
       </div>
