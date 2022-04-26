@@ -13,7 +13,7 @@ export const Footer = () => {
           </div>
           <div className={styles.text} id={styles.second}>
             <p style={{ 'textAlign': 'right' }}>&nbsp;Site built by&nbsp;</p>
-            <p className={styles.link}><Link href='https://github.com/dpandev'>dpandev&nbsp;</Link></p>
+            <p className={styles.link}><Link href='https://dpandev.vercel.app/'>dpandev&nbsp;</Link></p>
           </div>
         </div>
         <div className={styles.footerRight}>
